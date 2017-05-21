@@ -1,0 +1,31 @@
+.white {
+    color: white;
+}
+
+.nav_block {
+    height: 100%;
+    width: 55px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: grey;
+    display: inline-grid;
+}
+
+.nav_block span {
+    /* Rotate div */
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    /*transform-origin: left top 0;*/
+    height: 20px;
+    width: 120px;
+    margin-left: -34px;
+}
+
+.content {
+    margin: 70px;
+}
