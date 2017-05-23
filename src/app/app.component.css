@@ -49,7 +49,11 @@
 }
 
 .content {
-    margin: 70px;
+    position: absolute;
+    left: 80px;
+    right: 30px;
+    top: 40px;
+    bottom: 30px;
 }
 
 
