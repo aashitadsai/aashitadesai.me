@@ -14,6 +14,7 @@ import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { WhoComponent } from './who/who.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SkillsComponent } from './skills/skills.component';
     ErrorComponent,
     FooterComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    WhoComponent
   ],
   imports: [
     BrowserModule,
