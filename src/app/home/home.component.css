@@ -14,4 +14,19 @@
     letter-spacing: 2px;
     padding: 10px;
     text-align: center;
+    border: 1px solid #4e4c4c;
+    /*border-style: groove;
+    border-color: grey;
+    border-width: px;*/
+}
+
+.profile_picture {
+    height: auto;
+    width: 45%;
+}
+
+.profile_picture_set {
+    text-align: end;
+    position: absolute;
+    z-index: -1;
 }
