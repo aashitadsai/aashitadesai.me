@@ -10,7 +10,7 @@ import * as d3 from 'd3';
 export class SkillsComponent implements OnInit, OnChanges {
  
     ngOnInit() {
-        this.createChart();
+        /*this.createChart();*/
     }
 
     ngOnChanges() {
@@ -20,12 +20,15 @@ export class SkillsComponent implements OnInit, OnChanges {
 
 constructor() {
 
+    
   }
-        
-    createChart() {
-        var width = 750;
-var height = 600;
-var radius = Math.min(width, height) / 2;
+
+    
+    
+   /* createChart() {
+    var width = 750;
+    var height = 600;
+    var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
@@ -38,14 +41,14 @@ var colors = {
   "Hardware": "#7b615c",
   "Productivity Tools": "#de783b",
   "Data Analysis": "#6ab975",
-  "API/Services": "#a173d1",
+  "API/Services": "#2C3539",
   "Web Development": "#bbbbbb"
 };
 
 // Total size of all segments; we set this later, after loading the data.
 var totalSize = 0; 
         
-        let vis = d3.select("#chart").append("svg:svg")
+        var vis = d3.select("#chart").append("svg:svg")
         .attr("width", width)
         .attr("height", height)
         .append("svg:g")
@@ -324,6 +327,6 @@ var totalSize = 0;
         return b;
     }
     */
-        //console.log(getb());
+        //console.log(getb()); */
 }
 

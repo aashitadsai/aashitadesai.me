@@ -1,9 +1,10 @@
 .footer {
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     width: 99%;
     text-align: center;
     color: grey;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }

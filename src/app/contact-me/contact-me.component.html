@@ -1,4 +1,7 @@
-<div class="contact_form outer_container">
+<div class="outer_container1">
+<h3>Sway a Coffee!</h3>
+
+    <div class="contact_form outer_container">
     <form #contact_me_form="ngForm" (ngSubmit)="submit(contact_me_form)">
         <md-input-container>
             <input name="full_name" mdInput placeholder="Enter Full Name" required [(ngModel)]="full_name">
@@ -18,6 +21,7 @@
             <md-error>Please, Enter a message!</md-error>
         </md-input-container>
 
-        <br/><button md-raised-button type="Submit">Drop</button>
+        <br/><button class="drop" md-raised-button type="Submit">Drop</button>
     </form>
+    </div>
 </div>

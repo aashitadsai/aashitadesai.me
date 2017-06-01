@@ -1,0 +1,10 @@
+.container_border {
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    /*box-shadow: inset 0 0 1em #181818;*/
+}
+
+.container_border:hover {
+    transform: rotateY( 180deg );
+    -webkit-transform: rotateY(180deg);
+}

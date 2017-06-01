@@ -1,8 +1,10 @@
-<ul>
-<li>AngularJS</li>
-    <li>Offline</li>
-    <li>Collectors' Hub</li>
-    <li>Opioid Addiction</li>
-    <li>Geo-coordinates</li>
-    <li>Job Post Notifiers</li>
-</ul>
+<md-grid-list  cols="4" rowHeight="100px">
+ <md-grid-tile class="container_border"
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </md-grid-tile>
+    
+</md-grid-list>
