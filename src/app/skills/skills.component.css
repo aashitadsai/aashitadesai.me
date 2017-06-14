@@ -1,49 +1,74 @@
-.font {
-    color: white;
+/*rotating globe*/
+/*
+.skills-charts {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 700px;
 }
 
-#main {
-  float: left;
-  width: 750px;
+#myCanvasContainer {
+    position: relative;
+    height: 500px
 }
 
-#sidebar {
-  float: right;
-  width: 100px;
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: auto
 }
 
-#sequence {
-  width: 600px;
-  height: 70px;
+#myCanvasContainer li a {
+    font-family: font-file-82132;
 }
 
-#legend {
-  padding: 10px 0 0 3px;
+.clear {
+    clear: both
 }
 
-#sequence text, #legend text {
-  font-weight: 600;
-  fill: #fff;
+.logo {
+    height: 5%;
+    width:50%;
+}
+*/
+
+/*zoomable circles*/
+.node {
+  cursor: pointer;
 }
 
-#chart {
-  position: relative;
-}
-
-#chart path {
+.node:hover {
   stroke: #fff;
+  stroke-width: 1.5px;
 }
 
-#explanation {
-  position: absolute;
-  top: 260px;
-  left: 305px;
-  width: 140px;
-  text-align: center;
-  color: #666;
-  z-index: -1;
+.node--leaf {
+  fill: white;
 }
 
-#percentage {
-  font-size: 2.5em;
+.label {
+  /*font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+.most_outer_square {
+    margin-left: 400px;
+    margin-top: 50px;
+    display: block;
 }

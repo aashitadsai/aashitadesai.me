@@ -1,5 +1,5 @@
 h3 {
-    color: white;
+    color:grey;
     text-align: center;
     font-size: 40px;    
     letter-spacing: 2px;
@@ -11,10 +11,11 @@ h3 {
 /*form*/
 .contact_form {
     width: 500px;
-    color: white;
+    color: grey;
     padding: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-size: 13px;
 }
 
 .contact_form md-input-container {
@@ -47,6 +48,8 @@ h3 {
     color:black;
     display: block;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 25px;
     text-transform: uppercase;
+    box-shadow: 0 3px 0 0 grey, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px transparent inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+    background-color: whitesmoke;
 }
