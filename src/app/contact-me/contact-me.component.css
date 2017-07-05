@@ -15,7 +15,7 @@ h3 {
     padding: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .contact_form md-input-container {
@@ -47,6 +47,8 @@ h3 {
 .drop {
     color:black;
     display: block;
+    font-size: 15px;
+    font-weight: bold;
     margin: 0 auto;
     margin-top: 25px;
     text-transform: uppercase;

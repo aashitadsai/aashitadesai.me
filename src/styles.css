@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('assets/component.css');
+@import url('assets/normalize.css');
 body {
     font-family: 'Raleway', sans-serif;
     background-image: url('assets/images/wall_14.jpg');
