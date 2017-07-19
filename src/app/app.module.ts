@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//maps
+
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+//flex
+import { FlexLayoutModule } from "@angular/flex-layout";
 import { Router } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,8 +21,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WhoComponent } from './who/who.component';
 
+
+
 @NgModule({
-  declarations: [
+  
+    declarations: [
     AppComponent,
     HomeComponent,
     ContactMeComponent,
@@ -27,12 +35,14 @@ import { WhoComponent } from './who/who.component';
     SkillsComponent,
     WhoComponent
   ],
+    
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
+    FlexLayoutModule,
     BrowserAnimationsModule
   ],
   providers: [],

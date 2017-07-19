@@ -1,55 +1,22 @@
+/*
+.container_position {
+    left: 80px;
+    top: 140px;
+}
 .container_border {
     transform-style: preserve-3d;
     transition: all 1.0s linear;
-    /*box-decoration-break: 0 0 1em #131313;*/
+    box-decoration-break: 0 0 1em #131313;
     opacity: 0.8;
     color: whitesmoke;
     letter-spacing: 1.5px;
 }
 
-/*
 .container_border:hover {
     transform: rotateY( 180deg );
     -webkit-transform: rotateY(180deg);
 }
-*/
+// material ends*/
 
-div {
-    width: 1500px;
-    height: auto;
-    margin-top: 50px;
-    justify-content: center;
-}
 
-#collectors_hub{
-    animation-delay: 1s!important;
-}
-
-#aashitadesai_portfolio{
-    animation-delay: 1.05s;
-}
-
-#opiod_addiction_analysis{
-    animation-delay: 1.10s;
-}
-
-#angular_offline{
-    animation-delay: 1.15s;
-}
-
-#hardware_store_management{
-    animation-delay: 1.40s;
-}
-
-#automatic_job_post_notifier{
-    animation-delay: 1.45s;
-}
-
-#geo_coord_finder{
-    animation-delay: 1.50s;
-}
-
-#petrocard_system{
-    animation-delay: 1.55s;
-}
 

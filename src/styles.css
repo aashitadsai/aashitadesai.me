@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+@import url(assets/css/component.css);
+@import url(assets/css/segment.css);
+/*
 @import url('assets/component.css');
 @import url('assets/normalize.css');
+*/
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url('assets/images/wall_14.jpg');
+    /*background-image: url('assets/images/wall_14.jpg');*/
     /*background-color: black;*/
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .sk-cube-grid {
@@ -94,4 +99,35 @@ body {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);
     }
+}
+
+.mat-input-placeholder{
+    color:floralwhite!important;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.mat-input-error {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mat-input-element {
+    color: white!important;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.mat-input-underline {
+    background-color: dimgrey!important;
+}
+ .mat-raised-button {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px!important;
+    letter-spacing: 2px;;
+    background-color: rgba(80, 80, 80, 0.51)!important;
+    /* border: 1px solid gray; */
+    color: floralwhite!important;
 }

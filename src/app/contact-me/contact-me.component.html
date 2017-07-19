@@ -1,27 +1,35 @@
-<div class="outer_container1">
-<h3>Sway a Coffee!</h3>
+<div class="back-black">
+    <div id="map" class="background_map"></div>
+        <div class="h3-box">
+            <h3>Get In Touch</h3>
+        </div>
+        <div class="outer_container">
 
-    <div class="contact_form outer_container">
-    <form #contact_me_form="ngForm" (ngSubmit)="submit(contact_me_form)">
-        <md-input-container>
-            <input name="full_name" mdInput placeholder="Enter Full Name" required [(ngModel)]="full_name">
-            <md-error>Please, Enter full Name!</md-error>
-        </md-input-container>
-        <md-input-container>
-            <input name="email" mdInput placeholder="Enter Email ID" required [(ngModel)]="email" type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" minlength="10" maxlength="50">
-            <md-error>Please, Enter Email ID!</md-error>
-        </md-input-container>
-        <md-input-container>
-            <input name="subject" mdInput placeholder="Enter Subject Line" required [(ngModel)]="subject">
-            <md-error>Please, Enter the subject line!</md-error>
-        </md-input-container>
-        <md-input-container >
-            <input mdAutosizeMinRows="10" name="message" mdInput placeholder="Enter a message..." required [(ngModel)]="message">
-            <input mdAutosizeMinRows="10" name="message" mdInput placeholder="Enter a message..." required [(ngModel)]="message">
-            <md-error>Please, Enter a message!</md-error>
-        </md-input-container>
+                <!-- Angular Material Form-->
+                <form #contact_me_form="ngForm" (ngSubmit)="submit(contact_me_form)">
+                    <md-input-container>
+                        <input name="full_name" mdInput placeholder="Enter Full Name" required [(ngModel)]="full_name">
+                        <md-error>Please, Enter full Name!</md-error>
+                    </md-input-container>
+                    <br/>
+                    <md-input-container>
+                        <input name="email" mdInput placeholder="Enter Email ID" required [(ngModel)]="email" type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" minlength="10" maxlength="50">
+                        <md-error>Please, Enter Email ID!</md-error>
+                    </md-input-container>
+                    <br/>
+                    <md-input-container>
+                        <input name="subject" mdInput placeholder="Enter Subject Line" required [(ngModel)]="subject">
+                        <md-error>Please, Enter the subject line!</md-error>
+                    </md-input-container>
+                    <br/>
+                    <md-input-container>
+                        <input mdAutosizeMinRows="10" name="message" mdInput placeholder="Enter a message..." required [(ngModel)]="message">
+                        <md-error>Please, Enter a message!</md-error>
+                    </md-input-container>
+                    <br/>
+                    <br/>
+                    <button class="drop" md-raised-button type="Submit">Drop</button>
+                </form>
+        </div>
 
-        <br/><button class="drop" md-raised-button type="Submit">Drop</button>
-    </form>
-    </div>
 </div>

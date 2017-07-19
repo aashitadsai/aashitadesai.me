@@ -10,8 +10,7 @@
       "assets": [
         "assets",
         "assests/images",
-        "favicon.ico",
-        "assets/tagcanvas.js"
+        "favicon.ico"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -21,10 +20,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+          "theme.scss"
       ],
       "scripts": [
-          
+        "assets/js/main.js",
+        "assets/js/anime.min.js",
+        "assets/js/imagesloaded.pkgd.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -10,12 +10,12 @@ import { ErrorComponent } from './error/error.component';
 
 
 const appRoutes: Routes = [
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'who', component: WhoComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact-me', component: ContactMeComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }
 ];
 

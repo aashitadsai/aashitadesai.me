@@ -1,3 +1,4 @@
+<!--navigation bar starts-->
 <div class="nav_block container borderYtoX">
     <span routerLink="/home" routerLinkActive="active">HOME</span><br/>
     <span routerLink="/who" routerLinkActive="active">WHO AM I?</span><br/>
@@ -5,9 +6,18 @@
     <span routerLink="/projects" routerLinkActive="active">PROJECTS</span><br/>
     <span routerLink="/contact-me" routerLinkActive="active">CONTACT ME</span><br/>
 </div>
+<!--navigation bar ends-->
 
-<div class="content">
-    <router-outlet></router-outlet>
+<!--social icons container starts-->
+<div class="social_container">
+        <a href="mailto:aashi2193@gmail.com" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/aashita29/" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/aashitadesai" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/aashita.desai" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://github.com/aashitadsai" title="Github" target="_blank"><i class="fa fa-github"></i></a>
 </div>
+<!--social icons container ends-->
 
+<router-outlet></router-outlet>
 <app-footer></app-footer>
+ 
