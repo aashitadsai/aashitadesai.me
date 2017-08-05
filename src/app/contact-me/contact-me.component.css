@@ -15,11 +15,11 @@
     position: absolute;
     display: inline-block;
     top: 15px;
-    right: 60px;
-    left: 55px;
-    bottom: 30px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
     height: auto!important;
-    box-shadow: 0 0 1em #808080;
+    box-shadow: 0 0 1em #4c4c4c;
     z-index: 2;
 }
 
@@ -32,9 +32,12 @@ h3 {
     padding-top: 15px;
     z-index: 3;
     position: relative;
-    text-shadow: 1px 1px 0 #000, 2px 2px 0 #999; 
+/*    text-shadow: 1px 1px 0 #000, 2px 2px 0 #999; */
+    /*background-color: rgba(68, 68, 68, 0.55);*/
+    padding: 5px;
+    background-image: radial-gradient(#303030 33%, transparent 10%);
+    background-size: 3px 3px;
 }
-
 
 /*.h3-box {
     background-color: rgba(0, 0, 0, 0.65);

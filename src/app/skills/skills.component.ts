@@ -15,10 +15,13 @@ export class SkillsComponent implements OnInit, OnChanges {
     /*skills:any;
     title:string = "Skills";
     
-    constructor( private http: Http ) { 
-
-    }
 */    
+    innerHeight: any;
+    innerWidth: any;
+    constructor() { 
+        this.innerHeight = (window.screen.height-50) + "px";
+        this.innerWidth = (window.screen.height-50)+"px" ;
+    }
     ngOnInit() {
         /*this.readjson('assets/skills.json')
         .then(res=> {
@@ -51,7 +54,8 @@ export class SkillsComponent implements OnInit, OnChanges {
     Init() {
         var svg = d3.select("svg"),
         margin = 20,
-        diameter = +svg.attr("width"),
+        //diameter = +svg.attr("width"),
+        diameter = (window.screen.height-200),
         g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
         var scale = d3.scaleLinear<string>()
@@ -63,7 +67,7 @@ export class SkillsComponent implements OnInit, OnChanges {
     var pack = d3.pack()
         .size([diameter - margin, diameter - margin])
         .padding(2);
-
+        
     d3.json("assets/flare.json", function(error, root:any) {
       if (error) throw error;
 

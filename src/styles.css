@@ -11,8 +11,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     /*background-image: url('assets/images/wall_14.jpg');*/
-    /*background-color: black;*/
+    background-color: #080808;
     /*background-size: cover;*/
+}
+
+.gm-svpc img{
+    filter: grayscale(100%);
 }
 
 .sk-cube-grid {

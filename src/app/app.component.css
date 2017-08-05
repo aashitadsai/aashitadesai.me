@@ -136,3 +136,14 @@ div.borderYtoX span:hover:after {
     background: gray;
 }
 /*social icons container ends*/
+
+.main_content{
+    width: calc(100% - ( 55px + 60px ));
+    height: calc(100% - 20px);
+    overflow: auto;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    right:60px;
+    
+}

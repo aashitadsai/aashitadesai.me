@@ -1,6 +1,61 @@
-.itsMe {
-    color: dimgray;
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
+.who_container {
+    height: 100%;
+    border: 1px solid white;
+    padding: 60px;
+    /*margin-right: 70px;*/
+}
+
+.who_about {
+    box-shadow: 0 0 1em #4c4c4c;
+    background-color: #080808;
+    z-index: 2;
+}
+
+.padding {
+    margin-left: 35px;
+}
+
+.losange,
+.losange div {
+    z-index: 4;
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.losange {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.losange .los1 {
+    width: 355px;
+    height: 355px;
+    transform: rotate(-45deg) translateY(-74px);
+}
+
+.losange .los1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 50px #4c4c4c;
+}
+
+.who_text {
+    height: 200px;
+    width: 350px;
+    padding: 10px;
+    /*border: 0.5px solid gray;*/
+    z-index: 3;
+    color: gray;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 15px black;
+    margin-left: 80px;
+    margin-top: 100px;
+    /*border: 0.5px dotted gray;*/
+}
+
+.who_text:hover {
+    color: white;
 }
