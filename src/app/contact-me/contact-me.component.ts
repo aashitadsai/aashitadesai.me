@@ -34,7 +34,45 @@ if(form.valid) {
         var styles = {
         default: null,
             
-     theme3:[
+    theme2: [
+    {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 0.5
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            }
+        ]
+    }
+],						
+    theme3:[
   {
     "elementType": "geometry",
     "stylers": [
@@ -356,10 +394,10 @@ if(form.valid) {
     this.marker = new google.maps.Marker({
 	position: {lat: 40.717360, lng: -74.068313},
 	map: this.map,
-	title: 'Barely Here!',
+	title: 'I LIVE HERE!',
 	icon: {
-		url: "../../assets/images/map_marker_4.svg",
-		scaledSize: new google.maps.Size(150, 150),
+		url: "../../assets/images/map_marker_7.svg",
+		scaledSize: new google.maps.Size(30, 30),
         draggable: false
 	}
 });

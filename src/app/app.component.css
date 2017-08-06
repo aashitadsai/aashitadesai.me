@@ -106,6 +106,7 @@ div.borderYtoX span:hover:after {
     top: 35%;
     width:39px;
     z-index: 3;  
+    
 }
 .social_container a {
   width: 25px;
@@ -139,11 +140,10 @@ div.borderYtoX span:hover:after {
 
 .main_content{
     width: calc(100% - ( 55px + 60px ));
-    height: calc(100% - 20px);
+    height: calc(100% - 42px);
     overflow: auto;
     position: absolute;
-    right: 0px;
-    top:0px;
+    top:14px;
     right:60px;
     
 }

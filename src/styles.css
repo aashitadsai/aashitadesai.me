@@ -15,6 +15,13 @@ body {
     /*background-size: cover;*/
 }
 
+@media only screen and (max-width: 500px)
+{
+    body{
+        zoom:87%;
+    }
+}
+
 .gm-svpc img{
     filter: grayscale(100%);
 }

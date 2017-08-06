@@ -1,8 +1,7 @@
 .who_container {
     height: 100%;
-    border: 1px solid white;
-    padding: 60px;
-    /*margin-right: 70px;*/
+   /* border: 1px solid white;*/
+    padding: 5px;
 }
 
 .who_about {
@@ -11,51 +10,79 @@
     z-index: 2;
 }
 
-.padding {
-    margin-left: 35px;
+.imagecontainer{
+ margin:auto;
+    margin-top: 50px;
+ display:block;
+ width:175px;
+ height:175px;
+ overflow:hidden;
+ transform: rotate(45deg);
+ -ms-transform: rotate(45deg); /* IE 9 */
+ -webkit-transform: rotate(45deg); /* Safari and Chrome */
+ position:relative;
+ 
+ /* non-essential styling */
+ -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
+ box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
+ 
 }
-
-.losange,
-.losange div {
-    z-index: 4;
-    margin: 0 auto;
-    transform-origin: 50% 50%;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
-    position: relative;
-}
-
-.losange {
-    transform: rotate(45deg) translateY(10px);
-}
-
-.losange .los1 {
-    width: 355px;
-    height: 355px;
-    transform: rotate(-45deg) translateY(-74px);
-}
-
-.losange .los1 img {
-    width: 100%;
+.imagecontainer img{
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+    position:absolute;
+    left: -20px;
+    top:-60px;
+    width:250px;
     height: auto;
-    box-shadow: 0 0 50px #4c4c4c;
 }
 
 .who_text {
-    height: 200px;
-    width: 350px;
-    padding: 10px;
-    /*border: 0.5px solid gray;*/
-    z-index: 3;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
     color: gray;
-    letter-spacing: 1.5px;
-    box-shadow: 0 0 15px black;
-    margin-left: 80px;
+    margin: auto;
+    letter-spacing: 1px;
     margin-top: 100px;
-    /*border: 0.5px dotted gray;*/
+    font-size: 16px;
 }
-
 .who_text:hover {
     color: white;
+}
+
+.who_things {
+    padding: 10px 50px 10px 50px;
+}
+
+.who_idle {
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.who_idle_column {
+    
+    border: 1px solid gray;
+    display: inline-block;
+}
+.circle_content{
+    height: calc(100% - 50px);
+    margin-top: 10px;
+}
+
+.circle_div{
+    height: 28.56%;
+    width:200px;
+    display: inline-block;
+    border: 1px solid gray;
+
+}
+.circle_div_small{
+    height: 14.28%;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid gray;
 }
