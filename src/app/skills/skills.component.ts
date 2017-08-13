@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
+import { ObservableMedia} from "@angular/flex-layout";
 /*import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';*/
 import * as d3 from 'd3';
@@ -16,12 +17,17 @@ export class SkillsComponent implements OnInit, OnChanges {
     title:string = "Skills";
     
 */    
+    
     innerHeight: any;
     innerWidth: any;
-    constructor() { 
+    
+    constructor(
+        public media: ObservableMedia
+    ) { 
         this.innerHeight = (window.screen.height-50) + "px";
         this.innerWidth = (window.screen.height-50)+"px" ;
     }
+        
     ngOnInit() {
         /*this.readjson('assets/skills.json')
         .then(res=> {
