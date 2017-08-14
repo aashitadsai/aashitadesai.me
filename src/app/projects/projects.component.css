@@ -1,22 +1,20 @@
-/*
-.container_position {
-    left: 80px;
-    top: 140px;
+.project_container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
 }
-.container_border {
-    transform-style: preserve-3d;
-    transition: all 1.0s linear;
-    box-decoration-break: 0 0 1em #131313;
-    opacity: 0.8;
-    color: whitesmoke;
-    letter-spacing: 1.5px;
+.project_center_div{
+    display: inline-block; 
+    top: 20%;
+    position: absolute;
+}
+.project_detail{
+    display: inline-block;
+    filter: grayscale(100%);
 }
 
-.container_border:hover {
-    transform: rotateY( 180deg );
-    -webkit-transform: rotateY(180deg);
+.hex_arrange{
+    display: flex;
+    justify-content: center;
 }
-// material ends*/
-
-
-

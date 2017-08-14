@@ -1,13 +1,7 @@
-
-
-
-        <!--<md-grid-list class="container_position" cols="4" rowHeight="100px">
-            <md-grid-tile *ngFor="let tile of tiles" class="container_border"
-                          id={{tile.id}}
-                          [colspan]="tile.cols"
-                          [rowspan]="tile.rows"
-                          [style.background]="tile.color">
-                {{tile.text}}
-            </md-grid-tile>
-
-        </md-grid-list>-->
+<div class="project_container">
+    <div class="project_center_div">
+        <div class="hex_arrange" *ngFor="let row of projects">
+            <app-project-details *ngFor="let project of row.row" class="project_detail" [data]="project"></app-project-details>
+        </div>
+    </div>
+</div>

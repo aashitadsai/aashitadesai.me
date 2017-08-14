@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WhoComponent } from './who/who.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 
 
 
@@ -33,7 +34,8 @@ import { WhoComponent } from './who/who.component';
     FooterComponent,
     ProjectsComponent,
     SkillsComponent,
-    WhoComponent
+    WhoComponent,
+    ProjectDetailsComponent
   ],
     
   imports: [
