@@ -392,12 +392,13 @@ if(form.valid) {
         });*/
         
     this.marker = new google.maps.Marker({
-	position: {lat: 40.717360, lng: -74.068313},
+	position: {lat: 40.709360, lng: -74.08313},
 	map: this.map,
 	title: 'I LIVE HERE!',
+    optimized: false,
 	icon: {
-		url: "../../assets/images/map_marker_7.svg",
-		scaledSize: new google.maps.Size(30, 30),
+		url: "../../assets/images/marker.gif",
+		scaledSize: new google.maps.Size(60,60),
         draggable: false
 	}
 });

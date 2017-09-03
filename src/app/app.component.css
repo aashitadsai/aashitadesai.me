@@ -1,4 +1,5 @@
 /* navigation bar starts*/
+
 .active {
     color: white!important;
 }
@@ -51,6 +52,7 @@
     outline: none;
 }
 
+
 /* navigation code*/
 
 div.container span {
@@ -65,6 +67,7 @@ div.container span {
 
 
 /* Border from Y to X  */
+
 div.borderYtoX span:before,
 div.borderYtoX span:after {
     position: absolute;
@@ -97,31 +100,37 @@ div.borderYtoX span:hover:after {
     opacity: 1;
     height: 1px;
     width: 100%;
-}/* navigation bar ends*/
+}
+
+
+/* navigation bar ends*/
+
 
 /*social icons container starts*/
+
 .social_container {
     position: absolute;
     right: 10px;
     top: 35%;
-    width:39px;
-    z-index: 3;  
-    
+    width: 39px;
+    z-index: 3;
 }
+
 .social_container a {
-  width: 25px;
-  height: 25px;
-  margin: 0 6px;
-  text-align: center;
-  display: inline-block;
-  color: gray;
-  border: 1px solid dimgray;
-  border-radius: 2px;
-  transform: rotate(45deg);
-  line-height: 25px;
-  margin-bottom:15px;
-  transition: all 500ms ease;
+    width: 25px;
+    height: 25px;
+    margin: 0 6px;
+    text-align: center;
+    display: inline-block;
+    color: gray;
+    border: 1px solid dimgray;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    line-height: 25px;
+    margin-bottom: 15px;
+    transition: all 500ms ease;
 }
+
 .social_container a i {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -129,21 +138,26 @@ div.borderYtoX span:hover:after {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+
 /* hover */
-.social_container a:hover{
+
+.social_container a:hover {
     color: #fff;
 }
-.social_container a:hover{
+
+.social_container a:hover {
     background: gray;
 }
+
+
 /*social icons container ends*/
 
-.main_content{
-    width: calc(100% - ( 55px + 60px ));
+.main_content {
+    width: calc(100% - ( 55px + 60px));
     height: calc(100% - 42px);
     overflow: auto;
     position: absolute;
-    top:14px;
-    right:60px;
-    
+    top: 14px;
+    right: 60px;
 }

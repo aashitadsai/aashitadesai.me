@@ -18,5 +18,16 @@ export class ProjectDetailsComponent implements OnInit {
       this.img_source = this.data.img_url;
       
   }
+   
+   modal_container_class: string = "out";
+    modal_theme = "one";
+
+    button_click() {
+        this.modal_container_class = this.modal_theme;
+    }
+
+    modal_click() {
+        this.modal_container_class = this.modal_theme + " out";
+    }
 
 }

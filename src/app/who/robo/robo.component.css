@@ -1,0 +1,54 @@
+/*meditating robo*/
+.shadow {
+    display: block;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 10px;
+    margin-top: 15px;
+    border-radius: 100%;
+    opacity: .1;
+    box-shadow: 0 0 5px 5px gray;
+    -webkit-animation: shadow-size 3s ease-in-out infinite;
+    animation: shadow-size 3s ease-in-out infinite;
+}
+
+img.robot-med {
+  width: 65%;
+  height: auto;
+  animation: floating 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shadow-size {
+  0% {
+    transform: scale(.9);
+  }
+  50% {
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(.7);
+  }
+}
+
+.meditating_robo {
+    /*height: 200px;
+    width: 200px;
+    */border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+/*meditating robo ends*/

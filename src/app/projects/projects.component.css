@@ -12,6 +12,7 @@
 .project_detail{
     display: inline-block;
     filter: grayscale(100%);
+    z-index: 3;
 }
 
 .hex_arrange{

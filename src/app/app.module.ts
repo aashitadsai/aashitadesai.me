@@ -21,6 +21,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WhoComponent } from './who/who.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { CoffeeComponent } from './who/coffee/coffee.component';
+import { BeatlesComponent } from './who/beatles/beatles.component';
+import { MeetupComponent } from './who/meetup/meetup.component';
+import { RoboComponent } from './who/robo/robo.component';
+import { BatmanComponent } from './who/batman/batman.component';
 
 
 
@@ -35,7 +40,12 @@ import { ProjectDetailsComponent } from './projects/project-details/project-deta
     ProjectsComponent,
     SkillsComponent,
     WhoComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    CoffeeComponent,
+    BeatlesComponent,
+    MeetupComponent,
+    RoboComponent,
+    BatmanComponent
   ],
     
   imports: [
@@ -47,6 +57,10 @@ import { ProjectDetailsComponent } from './projects/project-details/project-deta
     FlexLayoutModule,
     BrowserAnimationsModule
   ],
+    
+    entryComponents:[
+        ProjectDetailsComponent
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
