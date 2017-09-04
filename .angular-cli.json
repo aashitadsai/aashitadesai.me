@@ -26,7 +26,9 @@
       "scripts": [
         "assets/js/main.js",
         "assets/js/anime.min.js",
-        "assets/js/imagesloaded.pkgd.min.js"
+        "assets/js/imagesloaded.pkgd.min.js",
+        "assets/js/TweenMax.min.js",
+        "../node_modules/jquery/dist/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

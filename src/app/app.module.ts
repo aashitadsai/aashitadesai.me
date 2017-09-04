@@ -26,7 +26,7 @@ import { BeatlesComponent } from './who/beatles/beatles.component';
 import { MeetupComponent } from './who/meetup/meetup.component';
 import { RoboComponent } from './who/robo/robo.component';
 import { BatmanComponent } from './who/batman/batman.component';
-
+import { PhilatelyComponent } from './who/philately/philately.component';
 
 
 @NgModule({
@@ -45,7 +45,8 @@ import { BatmanComponent } from './who/batman/batman.component';
     BeatlesComponent,
     MeetupComponent,
     RoboComponent,
-    BatmanComponent
+    BatmanComponent,
+    PhilatelyComponent
   ],
     
   imports: [

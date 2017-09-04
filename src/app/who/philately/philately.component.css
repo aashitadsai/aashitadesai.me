@@ -1,0 +1,12 @@
+.philately {
+    height: 150px;
+    width: auto;
+    filter: grayscale(100%);
+    border-radius: 5%;
+}
+
+.stamp {
+    height: 100%;
+    width: auto;
+    
+}
