@@ -1,4 +1,4 @@
-/*coffe*/
+﻿/*coffe*/
 
 .coffee-mug {
     position: relative;
@@ -9,7 +9,11 @@
     border-radius: .05em .05em 3em 3em;
     box-shadow: 0 0 0 0.2em gray;
 }
-
+@media screen and (max-width: 768px) and (min-width:414px) {
+  .coffee-mug {
+    top: -38px;
+  }
+}
 .coffee-mug:after {
     content: '';
     display: block;
