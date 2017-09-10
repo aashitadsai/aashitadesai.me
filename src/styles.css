@@ -184,3 +184,6 @@ body {
         background: #009bd5;
       }
 
+button:focus {
+    outline: none!important;
+}

@@ -1,58 +1,15 @@
 .background-image_skills {
-    background-color: black;
+    background-color: transparent;
     background-size: cover;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
     top: 0px;
     left: 0px;
+    bottom: 0px;
+    right:0px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
 }
-
-
-
-/*rotating globe*/
-/*
-.skills-charts {
-    position: absolute;
-    left: 25%;
-    width: 50%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 2;
-    max-width: 700px;
-}
-
-#myCanvasContainer {
-    position: relative;
-    height: 500px
-}
-
-#myCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    height: auto
-}
-
-#myCanvasContainer li a {
-    font-family: font-file-82132;
-}
-
-.clear {
-    clear: both
-}
-
-.logo {
-    height: 5%;
-    width:50%;
-}
-*/
 
 /*zoomable circles*/
 .node {
@@ -85,9 +42,10 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height:90%;
-    width: 70%;
+    /*height:90vh;*/
+    /*width: 90vh;*/
     margin:auto;
+    
 }
 
 .svg-container {
@@ -103,4 +61,41 @@
     position: absolute;
     top: 10px;
     left: 0;
+}
+
+/*buttons*/
+button {
+    border: 1px solid gray;
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    float: right;
+    margin-right: 15px;
+}
+
+.table-td{
+	background-color: rgba(158,158,158,0.33);
+	text-align:center;
+	color:white;
+}
+
+.table-td2{
+	padding-left:30px;
+	font-weight:598;
+}
+
+.table-td2:hover{
+	font: 16px arial, sans-serif;
+}
+
+.skill_page_buttons{
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
 }

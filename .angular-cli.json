@@ -21,7 +21,9 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-          "theme.scss"
+          "theme.scss",
+          "assets/css/hover.css",
+          "assets/css/animate.css"
       ],
       "scripts": [
         "assets/js/main.js",

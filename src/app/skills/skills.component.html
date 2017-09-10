@@ -1,6 +1,51 @@
-<div class="background-image_skills">
-    <svg class="most_outer_square"></svg>
-</div>
+<div>
+    <div class="background-image_skills" [style.visibility]="isViewable('svg_circle') && !media.isActive('xs')? 'visible' : 'hidden'">
+        <svg class="most_outer_square" [style.height]="svgSize" [style.width]="svgSize"></svg>
+    </div>
+    <div *ngIf="isViewable('skills_table') || media.isActive('xs')">
+        <div class="main_content details" id="skills">
+            <table cellpadding="10px" style="color:#d4d1d1; margin-top:100px; margin:auto">
+                <tbody>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Operating Systems</td>
+                        <td class="table-td2">Linux &nbsp; | &nbsp; Windows &nbsp; | &nbsp; MAC</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Programming Languages</td>
+                        <td class="table-td2">C &nbsp; | &nbsp; C++ &nbsp; | &nbsp; Python &nbsp; | &nbsp; Selenium &nbsp; | &nbsp; PHP &nbsp; | &nbsp; HTML5 &nbsp; | &nbsp; JavaScript &nbsp; | &nbsp; CSS3 &nbsp; | &nbsp; JQuery &nbsp; | &nbsp; Angular JS</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Database Systems </td>
+                        <td class="table-td2">MS Access &nbsp; | &nbsp; MySQL &nbsp; | &nbsp; NOSQL &nbsp; | &nbsp; SQlite</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">IDE</td>
+                        <td class="table-td2">Eclipse &nbsp; | &nbsp; Visual Studio&nbsp; | &nbsp; Keil</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Applications</td>
+                        <td class="table-td2">OwnCloud &nbsp; | &nbsp; Joomla &nbsp; | &nbsp; Wordpress &nbsp; | &nbsp; Drupal &nbsp; | &nbsp; Bootstrap</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Hardware</td>
+                        <td class="table-td2">8051 Microprocessor and 808X Microcontroller family &nbsp; | &nbsp; OrCad &nbsp; | &nbsp; RFID</td>
+                    </tr>
+                    <tr>
+                        <td class="table-td hvr-sweep-to-right">Productivity Tools</td>
+                        <td class="table-td2">MS Office 2013 &nbsp; | &nbsp; Open Office</td>
+                    </tr>
+                </tbody>
+            </table>
 
-<span style="color:white">{{media.isActive('sm')}}</span>
-<div class="buttons"></div>
+        </div>
+  
+    </div>
+    <div class="skill_page_buttons" >
+      <button class="hvr-rectangle-out" *ngIf="!media.isActive('xs')" (click)="switchSkillView();">{{viewChangeBtnText}}</button>
+      <button class="hvr-rectangle-out">Resume</button>
+    </div>
+
+   <!-- <span style="color:white">{{media.isActive('xs')}}</span>-->
+    <!--skills starts-->
+
+</div>

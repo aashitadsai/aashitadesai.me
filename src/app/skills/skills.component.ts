@@ -18,22 +18,50 @@ export class SkillsComponent implements OnInit, OnChanges {
     
 */    
     
-    innerHeight: any;
-    innerWidth: any;
+    
+    svgSize: any;
+    
+    //skillsView:string = "skills_table"; //default view
+    skillsView:string = "svg_circle"; //default view
+    
+    viewChangeBtnText = "Skills tabular view";
     
     constructor(
         public media: ObservableMedia
-    ) { 
-        this.innerHeight = (window.screen.height-50) + "px";
-        this.innerWidth = (window.screen.height-50)+"px" ;
+    ) {   
     }
-        
+
+    isViewable(view:string):boolean
+    {
+        if(this.skillsView == view)
+        {
+                return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    switchSkillView(){
+        if(this.skillsView == "svg_circle")
+        {
+            this.skillsView = "skills_table";
+            this.viewChangeBtnText = "Skill Circular View";
+        }
+        else
+        {
+            this.skillsView = "svg_circle";
+            this.viewChangeBtnText = "Skill Tabular View";
+        }
+    }
+    
     ngOnInit() {
         /*this.readjson('assets/skills.json')
         .then(res=> {
             this.skills = res;
             console.log(this.skills[0].skill);
-            TagCanvas.Start('myCanvas','tags',{
+            TagCanvas.Start('myCanvas','tags',{ 
                 textColour: 'white',
                 outlineColour: '#000',
                 reverse: true,
@@ -43,7 +71,11 @@ export class SkillsComponent implements OnInit, OnChanges {
   
         });
         */
-              this.Init();
+        if(this.isViewable('svg_circle'))
+        {
+              this.Init();  
+        }
+              
     }
     
     ngOnChanges() {
@@ -58,10 +90,19 @@ export class SkillsComponent implements OnInit, OnChanges {
     
     //d3.js implementation
     Init() {
+        let dsize;
+        if(window.innerHeight<window.innerWidth){
+            dsize = (window.innerHeight-100);
+        }
+        else{
+            dsize = (window.innerWidth-105);
+        }
+        this.svgSize = dsize+'px';
         var svg = d3.select("svg"),
         margin = 20,
         //diameter = +svg.attr("width"),
-        diameter = (window.screen.height-200),
+        diameter = dsize,
+        
         g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
         var scale = d3.scaleLinear<string>()
