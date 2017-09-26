@@ -44,7 +44,7 @@
 .segmenter__shadow {
 	position: absolute;
 	opacity: 0;
-	box-shadow: 0px 2px 15px rgba(0,0,0,0.7);
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.5);
 }
 
 /* Individual shadow styles */

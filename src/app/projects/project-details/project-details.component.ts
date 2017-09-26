@@ -1,4 +1,4 @@
-import { Component, OnInit , Input } from '@angular/core';
+﻿import { Component, OnInit , Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-details',
@@ -10,8 +10,9 @@ export class ProjectDetailsComponent implements OnInit {
   @Input() data: any;
     
   img_source:string;
-    
-  constructor() { }
+
+  constructor(
+  ) { }
 
   ngOnInit() {
       console.log("Input DATA:",this.data);
@@ -19,15 +20,4 @@ export class ProjectDetailsComponent implements OnInit {
       
   }
    
-   modal_container_class: string = "out";
-    modal_theme = "one";
-
-    button_click() {
-        this.modal_container_class = this.modal_theme;
-    }
-
-    modal_click() {
-        this.modal_container_class = this.modal_theme + " out";
-    }
-
 }

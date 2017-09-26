@@ -26,20 +26,29 @@ export class HomeComponent implements OnInit {
 					parallax: true,
 					parallaxMovement: {min: 7, max: 10},
 					positions: [
+                        //side segments
                         /*{top:80, left: 50, width:30, height:10},
                         {top:65, left: 50, width:30, height:10},
                         {top:50, left: 50, width:30, height:10},
                         {top:35, left: 50, width:30, height:10},
                         {top:20, left: 50, width:30, height:10},
                         {top:5, left: 50, width:30, height:10}
-						*/
-                        {top: 30, left: 20, width: 20, height: 30},
+*/						
+                        {top: 10, left: 20, width: 20, height: 30},
+						{top: 8, left: 35, width: 30, height: 20},
+						{top: 25, left: 18, width: 14, height: 25},
+						{top: 23, left: 50, width: 20, height: 10},
+						{top: 30, left: 65, width: 10, height: 30},
+						{top: 48, left: 20, width: 10, height: 13},
+						{top: 50, left: 67, width: 10, height: 20}
+                        
+                        /*{top: 30, left: 20, width: 20, height: 30},
 						{top: 28, left: 35, width: 30, height: 20},
 						{top: 45, left: 18, width: 14, height: 25},
 						{top: 43, left: 50, width: 20, height: 10},
 						{top: 50, left: 65, width: 10, height: 30},
 						{top: 68, left: 20, width: 10, height: 13},
-						{top: 70, left: 67, width: 10, height: 20}
+						{top: 70, left: 67, width: 10, height: 20}*/
 					],
 					onReady: function() {
 						

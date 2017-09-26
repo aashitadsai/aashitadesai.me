@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+﻿import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //maps
 
@@ -27,6 +27,7 @@ import { MeetupComponent } from './who/meetup/meetup.component';
 import { RoboComponent } from './who/robo/robo.component';
 import { BatmanComponent } from './who/batman/batman.component';
 import { PhilatelyComponent } from './who/philately/philately.component';
+import { ProjectModalComponent } from './projects/project-modal/project-modal.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { PhilatelyComponent } from './who/philately/philately.component';
     MeetupComponent,
     RoboComponent,
     BatmanComponent,
-    PhilatelyComponent
+    PhilatelyComponent,
+    ProjectModalComponent
   ],
     
   imports: [
@@ -59,10 +61,8 @@ import { PhilatelyComponent } from './who/philately/philately.component';
     BrowserAnimationsModule
   ],
     
-    entryComponents:[
-        ProjectDetailsComponent
-    ],
-  providers: [],
-  bootstrap: [AppComponent]
+    entryComponents:[],
+    providers: [ProjectModalComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
