@@ -40,6 +40,7 @@
     box-shadow: 0 0 1em #030303;
 }
 
+
 .h3-box{
     margin-top: 35px;
 }
@@ -85,3 +86,21 @@ background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, .2), rg
 background-size: 3px 3px;
 
 }
+
+@media (max-width: 414px) {
+    .contact_label {
+        background-size: 3.5px 3.5px;
+        font-size: 32px;
+        background-image: radial-gradient(rgba(48, 48, 48, 0.71) 33%, transparent 10%);
+    }
+    
+    .outer_container {
+        background-size: 3.5px 3.5px;
+        background-image: radial-gradient(rgba(48, 48, 48, 0.71) 33%, transparent 10%);
+    }
+    
+    #map {
+        display: none;
+    }
+}
+
