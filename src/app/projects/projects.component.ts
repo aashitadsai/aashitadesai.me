@@ -7,29 +7,30 @@
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
-  modal_data: string = null;
+    constructor() { }
+    modal_theme:string;
+    modal_title:string;
   //json object
     projects: any=[
         {
             row:[
                 {
-                    theme:'one',
+                    modal_theme:'one',
                     title:'aashitadesai.me',
                     img_url:'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 },
                 {
-                    theme: 'one',
+                    modal_theme: 'one',
                     title:"collectors' hub",
                     img_url: 'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 },
                 {
-                    theme: 'one',
+                    modal_theme: 'one',
                     title:"collectors' hub",
                     img_url: 'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 },
                 {
-                    theme: 'one',
+                    modal_theme: 'one',
                     title:"collectors' hub",
                     img_url: 'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 }        
@@ -38,17 +39,17 @@ export class ProjectsComponent implements OnInit {
         {
             row:[
                 {
-                    theme: 'one',
+                    modal_theme: 'one',
                     title:'aashitadesai.me',
                     img_url:'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 },
                 {
-                    theme: 'one',
+                    modal_theme: 'one',
                     title:"collectors' hub",
                     img_url: 'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 },
                 {
-                    theme: 'two',
+                    modal_theme: 'two',
                     title:"collectors' hub",
                     img_url: 'url(http://lumin8media.com/wp-content/uploads/2014/12/coding-screen.jpg)'
                 }       
@@ -56,15 +57,21 @@ export class ProjectsComponent implements OnInit {
         }
         
     ];
-    
+
+
   ngOnInit() {
-      console.log(this.projects);
+      //console.log(this.projects);
   }
 
-  projectClick(project:any) {
-      console.log("project modal open click");
-      this.modal_data = project;
+  modal_open(project:any){
+    this.modal_theme = project.modal_theme;
+    this.modal_title = project.title;
+  }
+
+  modal_close() {
+    this.modal_theme += ' out';
   }
 
 }
+
 

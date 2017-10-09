@@ -1,9 +1,16 @@
 ﻿<div class="project_container">
     <div class="project_center_div">
         <div class="hex_arrange" *ngFor="let row of projects">
-            <app-project-details *ngFor="let project of row.row" class="project_detail" [data]="project" (click)="projectClick(project)"></app-project-details>
+            <app-project-details *ngFor="let project_d of row.row" class="project_detail" [data]="project_d" (click)="modal_open(project_d);"></app-project-details>
         </div>
     </div>
 </div>
-<!--Modal-->
-<app-project-modal [data]="modal_data"></app-project-modal>
+
+<div id="modal-container" (click)="modal_close();" [ngClass]="modal_theme">
+    <div class="modal-background">
+      <div class="modal">
+        <h2>{{modal_title}}</h2>
+        <p>Hear me roar.</p>
+      </div>
+    </div>
+  </div>

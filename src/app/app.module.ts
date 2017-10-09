@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 //flex
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Router } from '@angular/router';
-import { MaterialModule } from '@angular/material';
+import { MaterialModule } from 'app/material-module/material-module.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +27,6 @@ import { MeetupComponent } from './who/meetup/meetup.component';
 import { RoboComponent } from './who/robo/robo.component';
 import { BatmanComponent } from './who/batman/batman.component';
 import { PhilatelyComponent } from './who/philately/philately.component';
-import { ProjectModalComponent } from './projects/project-modal/project-modal.component';
 
 
 @NgModule({
@@ -47,8 +46,7 @@ import { ProjectModalComponent } from './projects/project-modal/project-modal.co
     MeetupComponent,
     RoboComponent,
     BatmanComponent,
-    PhilatelyComponent,
-    ProjectModalComponent
+    PhilatelyComponent
   ],
     
   imports: [
@@ -62,7 +60,7 @@ import { ProjectModalComponent } from './projects/project-modal/project-modal.co
   ],
     
     entryComponents:[],
-    providers: [ProjectModalComponent],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

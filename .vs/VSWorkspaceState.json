@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\who",
-    "\\src\\app\\who\\philately"
+    "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\src\\app\\who\\philately\\philately.component.html",
+  "SelectedNode": "\\src\\app\\projects\\projects.component.ts",
   "PreviewInSolutionExplorer": false
 }

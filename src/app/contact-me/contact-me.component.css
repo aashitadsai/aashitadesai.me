@@ -36,7 +36,7 @@
     padding: 0.25em 0.6875em;
     width:300px;
     background-image: radial-gradient(#303030 33%, transparent 10%);
-    background-size: 3px 3px;
+    background-size: 3.5px 3.5px;
     box-shadow: 0 0 1em #030303;
 }
 
@@ -68,7 +68,7 @@
     /*background-color: rgba(15, 15, 15, 0.59);*/
     padding: 2.25em 1.6875em;
     background-image: radial-gradient(#303030 33%, transparent 10%);
-    background-size: 3px 3px;
+    background-size: 3.5px 3.5px;
 }
 .outer_container .mat-input-container{
     width:100%;
@@ -89,13 +89,13 @@ background-size: 3px 3px;
 
 @media (max-width: 414px) {
     .contact_label {
-        background-size: 3.5px 3.5px;
+        background-size: 4px 4px;
         font-size: 32px;
-        background-image: radial-gradient(rgba(48, 48, 48, 0.71) 33%, transparent 10%);
+        background-image: radial-gradient(rgba(48, 48, 48) 33%, transparent 10%);
     }
     
     .outer_container {
-        background-size: 3.5px 3.5px;
+        background-size: 4px 4px;
         background-image: radial-gradient(rgba(48, 48, 48, 0.71) 33%, transparent 10%);
     }
     

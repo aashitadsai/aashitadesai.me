@@ -17,8 +17,7 @@ export class SkillsComponent implements OnInit, OnChanges {
     title:string = "Skills";
     
 */    
-    
-    
+       
     svgSize: any;
     
     //skillsView:string = "skills_table"; //default view
@@ -152,6 +151,10 @@ export class SkillsComponent implements OnInit, OnChanges {
       zoomTo([root.x, root.y, root.r * 2 + margin]);
 
       function zoom(d) {
+        if(d['children'] == null) {
+            d = d.parent;
+        }
+
         var focus0 = focus; focus = d;
 
         var transition = d3.transition(transition)

@@ -15,7 +15,7 @@ export class ProjectDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-      console.log("Input DATA:",this.data);
+   //   console.log("Input DATA:",this.data);
       this.img_source = this.data.img_url;
       
   }
