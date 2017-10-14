@@ -3,7 +3,6 @@
   width: 300px; 
   height: 173.21px;
   margin: 86.60px 10px 4px 0;
-  /*background-image: url(http://csshexagon.com/img/meow.jpg);*/
   background-size: auto 346.4102px;
   background-position: center;
   display: inline-block;
@@ -12,6 +11,10 @@
 .hexagon_img{
     
 }
+
+
+
+
 
 .hexTop,
 .hexBottom {

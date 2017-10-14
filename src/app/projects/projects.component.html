@@ -9,8 +9,14 @@
 <div id="modal-container" (click)="modal_close();" [ngClass]="modal_theme">
     <div class="modal-background">
       <div class="modal">
-        <h2>{{modal_title}}</h2>
-        <p>Hear me roar.</p>
+            <div class="close"><button class="circle fromMiddle">
+                    <span></span>
+            </button></div>
+        <h2><b>{{modal_title}}</b></h2>
+        <h4>{{modal_category}}</h4>
+        <h4>{{modal_description}}</h4>
+        <h4>{{modal_functionalities}}</h4>
+        <h4>{{modal_technologies}}</h4>
       </div>
     </div>
-  </div>
+  </div> 

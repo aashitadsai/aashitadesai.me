@@ -3,6 +3,7 @@
     height: 100%;
     justify-content: center;
     margin: auto;
+    background: repeating-linear-gradient( to right, rgba(53, 53, 53, 0), rgba(78, 78, 78, 0) 2px, rgba(53, 53, 53, 0) 2px, rgba(78, 78, 78, 0.24) 5px );
 }
 .project_center_div{
     display: inline-block; 
@@ -18,6 +19,106 @@
 .hex_arrange{
     display: flex;
     justify-content: center;
+}
+
+.modal {
+  width: 350px;
+}
+
+/*close button  */
+.close {
+  
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid rgb(117, 117, 117);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 20px;
+}
+.circle:after {
+  width: 24px;
+  height: 4px;
+  background-color: rgb(117, 117, 117);
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  position: absolute;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.circle:before {
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  width: 24px;
+  height: 4px;
+  background-color: rgb(117, 117, 117);
+  content: "";
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.fromMiddle:before, .fromMiddle:after {
+  z-index: 9999;
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+  -moz-transition: ease-in-out 400ms;
+  -o-transition: ease-in-out 400ms;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+.fromMiddle span {
+  width: 38px;
+  height: 38px;
+  background-color: rgb(117, 117, 117);
+  display: inline-block;
+  position: absolute;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  left: -2px;
+  top: -2px;
+  z-index: -9999;
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0;
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.fromMiddle:hover:before, .fromMiddle:hover:after {
+  position: absolute;
+  background-color: white;
+}
+.fromMiddle:hover span {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* Project Modal */

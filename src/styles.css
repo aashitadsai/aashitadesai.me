@@ -13,6 +13,10 @@ body {
     /*background-image: url('assets/images/wall_14.jpg');*/
     background-color: #080808;
     /*background-size: cover;*/
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+     -ms-user-select: none;
+         user-select: none;
 }
 
 @media only screen and (max-width: 1440px) and (min-width:768px)
