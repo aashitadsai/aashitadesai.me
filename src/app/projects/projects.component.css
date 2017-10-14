@@ -9,6 +9,7 @@
     display: inline-block; 
     top: 20%;
     position: absolute;
+    zoom:80%;
 }
 .project_detail{
     display: inline-block;
@@ -600,4 +601,19 @@
     }
   }
   
+  @media (max-width: 414px) {
+    .project_detail {
+      margin-bottom: 95px;
+    }
+
+    .hex_arrange {
+      display:grid;
+    }
+  }
   
+  @media (max-width: 768px) and (min-width: 500px) {
+    .project_center_div {
+      zoom: 65%;
+      margin-left: 10px;
+    }
+  }
