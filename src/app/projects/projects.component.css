@@ -29,12 +29,12 @@
 @media (max-width:500px){
   .modal{
     width:380px;
-    height:625px;
+    height:100vh;
   }
   .modal_content{
     padding:10px;
     overflow-y:scroll;
-    height:625px;
+    height:100vh;
   }
 }
 
