@@ -161,3 +161,15 @@ div.borderYtoX span:hover:after {
     top: 14px;
     right: 60px;
 }
+
+
+@media (min-width: 330px) and (max-width: 768px) {
+    .nav_block span {
+        font-size: 10px;
+    }
+
+    .div.container span {
+        padding: 6px 6px 6px 0px;
+    }
+
+}

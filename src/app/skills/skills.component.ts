@@ -3,7 +3,8 @@ import { ObservableMedia} from "@angular/flex-layout";
 /*import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';*/
 import * as d3 from 'd3';
-/*declare var TagCanvas:any;*/
+import {skills} from './skill';
+
 
 @Component({
   selector: 'app-skills',
@@ -13,12 +14,11 @@ import * as d3 from 'd3';
 
 export class SkillsComponent implements OnInit, OnChanges {
  
-    /*skills:any;
-    title:string = "Skills";
+aashita_skills: skills[] = new Array<skills>();
+
+ // i10 : car = new car();
     
-*/    
-       
-    svgSize: any;
+svgSize: any;
     
     //skillsView:string = "skills_table"; //default view
     skillsView:string = "svg_circle"; //default view
@@ -26,10 +26,10 @@ export class SkillsComponent implements OnInit, OnChanges {
     viewChangeBtnText = "Skills tabular view";
     
     constructor(
-        public media: ObservableMedia
-    ) {   
-    }
+        public media: ObservableMedia,
+        ) {   }
 
+    //check skills view
     isViewable(view:string):boolean
     {
         if(this.skillsView == view)
@@ -42,6 +42,7 @@ export class SkillsComponent implements OnInit, OnChanges {
         }
     }
     
+    //circular to table function
     switchSkillView(){
         if(this.skillsView == "svg_circle")
         {
@@ -56,24 +57,12 @@ export class SkillsComponent implements OnInit, OnChanges {
     }
     
     ngOnInit() {
-        /*this.readjson('assets/skills.json')
-        .then(res=> {
-            this.skills = res;
-            console.log(this.skills[0].skill);
-            TagCanvas.Start('myCanvas','tags',{ 
-                textColour: 'white',
-                outlineColour: '#000',
-                reverse: true,
-                depth: 0.8,
-                maxSpeed: 0.08
-              });
-  
-        });
-        */
+        //
         if(this.isViewable('svg_circle'))
         {
-              this.Init();  
+              this.Init();  //call function 'init()' to display circular view
         }
+        this.readTable();
               
     }
     
@@ -81,13 +70,7 @@ export class SkillsComponent implements OnInit, OnChanges {
         
     }
 
-    // read skills from json       
-    /*readjson(filepath:string):Promise<any>{
-       return this.http.get(filepath).toPromise()
-           .then(res=>res.json().skills as any); 
-    }*/
-    
-    //d3.js implementation
+    //d3.js circle
     Init() {
         let dsize;
         if(window.innerHeight<window.innerWidth){
@@ -178,6 +161,72 @@ export class SkillsComponent implements OnInit, OnChanges {
       }
     });
     
-}
+} //d3.js ends
+
+    table:any = [
+        {
+            skill_type: "Operating System:",
+            skill_set: ["MAC","Linux", "Windows"]
+        },
+
+        {
+            skill_type: "Web based Languages:",
+            skill_set: ["HTML5", "CSS3", "PHP", "JavaScript", "TypeScript"]
+        },
+
+        {
+            skill_type: "Libraries/JS Framework:",
+            skill_set: ["D3.js", "jQuery", "KarmaJS", "Jasmine", "Express.js", "Angular 4", "ReactJS"]
+        },
+
+        {
+            skill_type: "Database/Server:",
+            skill_set: ["PostgreSQL", "MySQL", "SQLite", "NoSQL", "MongoDB", "Apache", "Tomcat", "node.js"]
+        },
+
+        {
+            skill_type: "Framework/Web API:",
+            skill_set:  ["Wordpress", "Joomla", "Facebook APIs", "Google APIs", "Selenium Webdriver", "Docker", "REST API", "JSON"]
+        },
+
+        {
+            skill_type: "Web Services:",
+            skill_set: ["Amazon AWS", "Microsoft Azure", "Google Cloud Platform"]
+        },
+
+        {
+            skill_type: "Productivity Tools:",
+            skill_set: ["npm", "MS Office", "Libre Office", "Google Analytics", "Power BI", "SharePoint", "Slack"]
+        },
+
+        {
+            skill_type: "Version Control/Clients:",
+            skill_set: ["GIT", "SVN", "GitHub", "Source Tree", "Tortoise SVN", "Bit Bucket"]
+        },
+
+        {
+            skill_type: "UI/UX:",
+            skill_set: ["Bootstrap 3/4", "Angular Material 2", "Adobe PhotoShop", "Adobe Illustrator", "Balasmiq", "Axure"]
+        }
+
+    ];
+        // core_languages: ["C", "C++", "JAVA", "Python", "C#", ".NET CORE", "R", "SQL", "LINQ"],
+        // web_based_languages: ["HTML5", "CSS3", "PHP", "JavaScript", "TypeScript"],
+        // lib_js_framework: ["D3.js", "jQuery", "KarmaJS", "Jasmine", "Express.js", "Angular 4", "ReactJS"],
+        // database_server: ["PostgreSQL", "MySQL", "SQLite", "NoSQL", "MongoDB", "Apache", "Tomcat", "node.js"],
+        // framework_web_api: ["Wordpress", "Joomla", "Facebook APIs", "Google APIs", "Selenium Webdriver", "Docker", "REST API", "JSON"],
+        // web_services: ["Amazon AWS", "Microsoft Azure", "Google Cloud Platform"],
+        // productivity_tools: ["npm", "MS Office", "Libre Office", "Google Analytics", "Power BI", "SharePoint", "Slack"],
+        // version_control_clients: ["GIT", "SVN", "GitHub", "Source Tree", "Tortoise SVN", "Bit Bucket"],
+        // ui_ux:s ["Bootstrap 3/4", "Angular Material 2", "Adobe PhotoShop", "Adobe Illustrator", "Balasmiq", "Axure"]
+
+    readTable() {
+      
+      //for loop
+      for (let i in this.table) {
+        this.aashita_skills[i] = this.table[i];
+      }
+           
+    }
 }
 

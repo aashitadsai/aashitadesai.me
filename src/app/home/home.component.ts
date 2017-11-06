@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit {
                         {top:20, left: 50, width:30, height:10},
                         {top:5, left: 50, width:30, height:10}
 */						
-                        {top: 10, left: 20, width: 20, height: 30},
-						{top: 8, left: 35, width: 30, height: 20},
+                        {top: 15, left: 20, width: 20, height: 30},
+						{top: 18, left: 35, width: 30, height: 20},
 						{top: 25, left: 18, width: 14, height: 25},
 						{top: 23, left: 50, width: 20, height: 10},
 						{top: 30, left: 65, width: 10, height: 30},

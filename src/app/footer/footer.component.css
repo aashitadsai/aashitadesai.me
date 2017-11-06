@@ -9,3 +9,9 @@
     text-transform: uppercase;
     font-size:9.5px;
 }
+
+@media (min-width: 350px) and (max-width: 768px) {
+    .footer {
+        letter-spacing: 3px;
+    }
+}

@@ -87,7 +87,7 @@ background-size: 3px 3px;
 
 }
 
-@media (max-width: 414px) {
+@media (min-width: 330px) and (max-width: 414px) {
     .contact_label {
         background-size: 4px 4px;
         font-size: 32px;
@@ -97,6 +97,8 @@ background-size: 3px 3px;
     .outer_container {
         background-size: 4px 4px;
         background-image: radial-gradient(rgba(48, 48, 48, 0.71) 33%, transparent 10%);
+        top: 20%;
+        width:280px;
     }
     
     #map {

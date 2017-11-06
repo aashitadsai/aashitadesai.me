@@ -4,39 +4,101 @@
     </div>
     <div *ngIf="isViewable('skills_table') || media.isActive('xs')">
         <div class="main_content details" id="skills">
-            <table cellpadding="10px" style="color:#d4d1d1; margin-top:100px; margin:auto">
+            
+            <!-- FlexTable -->
+            <div fxLayout="column" class="flex_div" >
+            <div fxLayout="row" *ngFor="let obj of table" fxLayout.xs="column">
+                <div fxFlex="21" class="title_div" fxFlex.xs="100"><span class="title_span">{{obj.skill_type}}</span></div>
+                <div fxFlex="82" class="skills_type_div">
+                    <span *ngFor="let skill of obj.skill_set">
+                    <span class="skills_span">{{skill}}</span>
+                    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></span>
+                </div>
+            </div></div>
+            <!-- FlexTable Ends -->
+
+            <!---angular table -->
+            <!-- LessDumberApproach 
+            <table *ngFor="let obj of table">
                 <tbody>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Operating Systems</td>
-                        <td class="table-td2">Linux &nbsp; | &nbsp; Windows &nbsp; | &nbsp; MAC</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Programming Languages</td>
-                        <td class="table-td2">C &nbsp; | &nbsp; C++ &nbsp; | &nbsp; Python &nbsp; | &nbsp; Selenium &nbsp; | &nbsp; PHP &nbsp; | &nbsp; HTML5 &nbsp; | &nbsp; JavaScript &nbsp; | &nbsp; CSS3 &nbsp; | &nbsp; JQuery &nbsp; | &nbsp; Angular JS</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Database Systems </td>
-                        <td class="table-td2">MS Access &nbsp; | &nbsp; MySQL &nbsp; | &nbsp; NOSQL &nbsp; | &nbsp; SQlite</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">IDE</td>
-                        <td class="table-td2">Eclipse &nbsp; | &nbsp; Visual Studio&nbsp; | &nbsp; Keil</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Applications</td>
-                        <td class="table-td2">OwnCloud &nbsp; | &nbsp; Joomla &nbsp; | &nbsp; Wordpress &nbsp; | &nbsp; Drupal &nbsp; | &nbsp; Bootstrap</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Hardware</td>
-                        <td class="table-td2">8051 Microprocessor and 808X Microcontroller family &nbsp; | &nbsp; OrCad &nbsp; | &nbsp; RFID</td>
-                    </tr>
-                    <tr>
-                        <td class="table-td hvr-sweep-to-right">Productivity Tools</td>
-                        <td class="table-td2">MS Office 2013 &nbsp; | &nbsp; Open Office</td>
+                    <tr><th> {{obj.skill_type}}</th>
+                        <td *ngFor="let skill of obj.skill_set">
+                            <span>{{skill}}</span>
+                            <span>|</span>
+                        </td>
                     </tr>
                 </tbody>
-            </table>
+            </table> LessDumberApproach Ends-->
 
+
+            <!-- DumbApproach
+            <table class="ob">
+              <tbody>
+                <tr><th>Operating System:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor="let obj of aashita_skills.os">
+                        <span>{{obj}}</span>
+                        <span> |</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Core Languages:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.core_languages">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Web-based Languages:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.web_based_languages">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Libraries / JS Frameworks:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.lib_js_framework">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Database / Servers:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor="let obj of aashita_skills.database_server">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Framework / Web APIs:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.framework_web_api">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Web Services:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.web_services;
+                    ">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>Productivity Tools:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td *ngFor = "let obj of aashita_skills.productivity_tools">
+                    <span>{{obj}}</span>
+                    <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                </td>
+            </tr><br/>
+                <tr><th>Version Control / Clients:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.version_control_clients">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+                <tr><th>UI / UX:</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td *ngFor = "let obj of aashita_skills.ui_ux">
+                        <span>{{obj}}</span>
+                        <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    </td>
+                </tr><br/>
+            </tbody>
+            </table> 
+        DumbApproach Ends-->
+        
         </div>
   
     </div>
@@ -46,6 +108,6 @@
     </div>
 
    <!-- <span style="color:white">{{media.isActive('xs')}}</span>-->
-    <!--skills starts-->
+   <!--skills starts-->
 
 </div>
